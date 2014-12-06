@@ -1,0 +1,45 @@
+body {
+	text-align: center;
+}
+.next-color {
+	display: inline-block;
+	vertical-align: top;
+}
+table {
+	border-collapse: collapse;
+	display: inline-table;
+}
+td {
+	width: 25px;
+	height: 25px;
+	border: 1px solid #dbdbdb;
+	text-align: center;
+	vertical-align: middle;
+	cursor: default;
+	color: #fff;
+	font-weight: bold;
+}
+tr:nth-child(-n+3) td:nth-child(n+4):nth-child(-n+13),
+tr:nth-child(n+14) td:nth-child(n+4):nth-child(-n+13),
+tr:nth-child(n+4):nth-child(-n+13) td:nth-child(-n+3),
+tr:nth-child(n+4):nth-child(-n+13) td:nth-child(n+14) {
+	cursor: pointer;
+}
+.bottom:before {
+	content: '↓';
+}
+.left:before {
+	content: '←';
+}
+.top:before {
+	content: '↑';
+}
+.right:before {
+	content: '→';
+}
+#next_color {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border: 1px solid #dbdbdb;
+}
